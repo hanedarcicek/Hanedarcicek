@@ -1,6 +1,6 @@
 @import 'reset';
 
-#page{
+#page {
 
     background-image: url(./css-image/backy.jpg);
     height: 100vh;
@@ -8,7 +8,7 @@
     background-position: center;
 }
 
-#header{
+#header {
     width: 100%;
     height: 4rem;
     display: flex;
@@ -16,93 +16,112 @@
     justify-content: center;
 }
 
-#header-div{
+#header-div {
     height: 4rem;
 }
-.nav-link{
-    color: #C94A90;
-    font-size:1.2vw;
-    font-weight: 600;
-    
 
+.nav-link {
+    color: #C94A90;
+    font-size: 1.2vw;
+    font-weight: 600;
 }
 
-#main{
+#main {
     width: 100%;
     margin-top: 3.5rem;
-    
+    overflow: hidden;
+
 }
 
-#main-div{
+#main-div {
     height: 25rem;
     color: #C94A90;
-    
+
 }
 
-#rightside{
+#rightside {
     position: relative;
     height: 25rem;
     margin-top: 3.5rem;
-   
-    
-    
-}
-#leftside{
-    height: 25rem; 
-    
 }
 
-.btn-div{
+#leftside {
+    height: 25rem;
+
+}
+
+.btn-div {
     background-color: #C94A90;
     color: #ffffff;
 }
 
-.facebook{
+.facebook {
     position: absolute;
-    width:2.5rem;
-    bottom:30%;
-    left:25%;
-    opacity:1;
+    width: 2.5rem;
+    bottom: 50%;
+    left: 25%;
+    opacity: 1;
     animation: facemove 6s linear;
 }
 
-@keyframes facemove{
+@keyframes facemove {
 
-    from { 	transform: rotate(0deg)   translateX(40px);  bottom:-20%;}
-	to   {  transform: rotate(360deg) translateX(0);  bottom: 30%;}
+    from {
+        transform: rotate(0deg) translateX(40px);
+        bottom: -20%;
+    }
+
+    to {
+        transform: rotate(360deg) translateX(0);
+        bottom: 50%;
+    }
 
 }
 
 
-.whatsapp{
+.whatsapp {
     position: absolute;
-    width:2.5rem;
-    bottom:30%;
-    left:46%;
-    right:46%;
+    width: 2.5rem;
+    bottom: 50%;
+    left: 46%;
+    right: 46%;
     animation: whmove 6s linear;
-    
+
 }
 
-@keyframes whmove{
+@keyframes whmove {
 
-    from { 	transform: rotate(0deg)   translateX(40px);  bottom:-30%;}
-	to   {  transform: rotate(360deg) translateX(0);  bottom: 30%;}
-    
+    from {
+        transform: rotate(0deg) translateX(40px);
+        bottom: -30%;
+    }
+
+    to {
+        transform: rotate(360deg) translateX(0);
+        bottom: 50%;
+    }
+
 }
 
-.instagram{
+.instagram {
     position: absolute;
-    width:2.5rem;
-    bottom:30%;
-    right:25%;
-    opacity:1;
-    animation: insmove 6s linear ;
+    width: 2.5rem;
+    bottom: 50%;
+    right: 25%;
+    opacity: 1;
+    animation: insmove 6s linear;
 }
 
-@keyframes insmove{
+@keyframes insmove {
 
-    from { 	transform: rotate(0deg)   translateX(40px);  bottom:-40%;}
-	to   {  transform: rotate(360deg) translateX(0);  bottom: 30%;}
+    from {
+        transform: rotate(0deg) translateX(40px);
+        bottom: -40%;
+    }
+
+    to {
+        transform: rotate(360deg) translateX(0);
+        bottom: 50%;
+    }
 
 }
