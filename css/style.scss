@@ -68,7 +68,7 @@
 
 @keyframes facemove{
 
-    from { 	transform: rotate(0deg)   translateX(40px);  bottom:-30%;}
+    from { 	transform: rotate(0deg)   translateX(40px);  bottom:-20%;}
 	to   {  transform: rotate(360deg) translateX(0);  bottom: 30%;}
 
 }
@@ -86,7 +86,7 @@
 
 @keyframes whmove{
 
-    from { 	transform: rotate(0deg)   translateX(40px);  bottom:-50%;}
+    from { 	transform: rotate(0deg)   translateX(40px);  bottom:-30%;}
 	to   {  transform: rotate(360deg) translateX(0);  bottom: 30%;}
     
 }
@@ -102,7 +102,7 @@
 
 @keyframes insmove{
 
-    from { 	transform: rotate(0deg)   translateX(40px);  bottom:-70%;}
+    from { 	transform: rotate(0deg)   translateX(40px);  bottom:-40%;}
 	to   {  transform: rotate(360deg) translateX(0);  bottom: 30%;}
 
 }
