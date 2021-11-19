@@ -30,10 +30,13 @@ ul {
 }
 
 body {
+  font-size: 16px;
   background-color: #f3f3f3f8;
 }
 
 #page {
+  width: 100%;
+  height: 100vh;
   background-image: url(./css-image/backy.jpg);
   height: 100vh;
   background-size: cover;
@@ -41,9 +44,19 @@ body {
 }
 
 /*--------------Header Codes------------------------------*/
-#header-row {
+#header {
   width: 100%;
   height: 10vh;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 3fr;
+      grid-template-columns: 1fr 3fr;
+  -ms-grid-rows: 1fr;
+      grid-template-rows: 1fr;
+}
+
+#header .logo {
+  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -55,18 +68,28 @@ body {
           justify-content: center;
 }
 
-#header-cont {
-  width: 100%;
+#header #menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
   height: 10vh;
+  width: 100%;
+  font-size: 1.2rem;
 }
 
-.nav-link {
+#header #menu .nav-link {
   color: #C94A90;
   font-size: 1.2vw;
   font-weight: 600;
 }
 
-.nav-link:hover {
+#header #menu .nav-link:hover {
   background-color: #C94A90;
   border-radius: 5%;
   color: #ffffff;
@@ -75,41 +98,56 @@ body {
 
 /*--------------Header Codes------------------------------*/
 /*--------------Main Codes------------------------------*/
-#main {
+.main {
   width: 100%;
-  height: 100%;
-  margin-top: 3.5rem;
+  height: 90vh;
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  -ms-grid-rows: 1fr;
+      grid-template-rows: 1fr;
+  color: #C94A90;
   overflow: hidden;
 }
 
-#main-div {
-  height: 25rem;
-  color: #C94A90;
+.main .right-side {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 30%;
 }
 
-#rightside {
-  position: relative;
-  height: auto;
-  margin-top: 3.5rem;
-}
-
-#leftside {
-  height: auto;
-}
-
-.btn-div {
+.main .btn {
+  font-size: 0.8rem;
+  width: 8rem;
+  height: 2rem;
   background-color: #C94A90;
   color: #ffffff;
+  margin-bottom: 0.5rem;
+  font-weight: 700;
 }
 
-.btn:hover {
+.main .btn:hover {
+  width: 8rem;
+  height: 2rem;
   background-color: #ffffff;
   border: 1px solid #C94A90;
   color: #C94A90;
   font-weight: 700;
 }
 
-.social {
+.main .social {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -119,37 +157,40 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  margin-top: 1rem;
 }
 
-.facebook {
+.main .social * {
+  margin: 0 0.5rem;
+}
+
+.main .social .facebook {
   width: 2.5rem;
-  -webkit-animation: facemove 3s linear;
-          animation: facemove 3s linear;
-  opacity: 0.5;
-  margin-right: 0.7rem;
-}
-
-.whatsapp {
-  width: 2.5rem;
-  -webkit-animation: whmove 3s linear;
-          animation: whmove 3s linear;
-  opacity: 0.5;
-  margin-right: 0.7rem;
-}
-
-.instagram {
-  width: 2.5rem;
-  -webkit-animation: insmove 3s linear;
-          animation: insmove 3s linear;
-  opacity: 0.5;
-  margin-right: 0.7rem;
-}
-
-.facebook:hover,
-.whatsapp:hover,
-.instagram:hover {
+  -webkit-animation: facemove 2s linear;
+          animation: facemove 2s linear;
   opacity: 1;
+  margin-right: 0.7rem;
+}
+
+.main .social .whatsapp {
+  width: 2.5rem;
+  -webkit-animation: whmove 2s linear;
+          animation: whmove 2s linear;
+  opacity: 1;
+  margin-right: 0.7rem;
+}
+
+.main .social .instagram {
+  width: 2.5rem;
+  -webkit-animation: insmove 2s linear;
+          animation: insmove 2s linear;
+  opacity: 1;
+  margin-right: 0.7rem;
+}
+
+.main .social .facebook:hover,
+.main .social .whatsapp:hover,
+.main .social .instagram:hover {
+  opacity: 0.5;
 }
 
 @-webkit-keyframes facemove {
@@ -223,6 +264,4 @@ body {
             transform: rotate(360deg) translateX(0);
   }
 }
-
-/*--------------Main Codes------------------------------*/
 /*# sourceMappingURL=style.css.map */
