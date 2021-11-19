@@ -32,12 +32,16 @@ ul {
 body {
   font-size: 16px;
   background-color: #f3f3f3f8;
+  font-family: 'Sriracha', cursive;
 }
 
 #page {
   width: 100%;
   height: 100vh;
-  background-color: #f8f8f8f8;
+  background: #cbd7d7;
+  background: -webkit-gradient(linear, left top, left bottom, from(#cbd7d7), to(#f8f8f8));
+  background: linear-gradient(180deg, #cbd7d7 0%, #f8f8f8 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#cbd7d7",endColorstr="#f8f8f8",GradientType=1);
 }
 
 /*--------------Header Codes------------------------------*/
@@ -82,15 +86,23 @@ body {
 
 #header #menu .nav-link {
   color: #C94A90;
-  font-size: 1.2vw;
-  font-weight: 600;
+  font-size: 1.1vw;
+  font-weight: 500;
+  margin-left: 0.4rem;
 }
 
 #header #menu .nav-link:hover {
-  background-color: #C94A90;
-  border-radius: 5%;
-  color: #ffffff;
+  background-color: #f8f8f8f8;
+  border: 2px solid #C94A90;
+  color: #C94A90;
   font-weight: 500;
+  border-radius: 0.6rem;
+}
+
+#header #menu #page-act {
+  border: 2px solid #C94A90;
+  opacity: 0.2;
+  border-radius: 0.6rem;
 }
 
 /*--------------Header Codes------------------------------*/
@@ -235,13 +247,13 @@ body {
 
 .main .center .box-b p {
   text-align: center;
-  margin-top: 0.2rem;
   font-size: 1.3vw;
 }
 
 .main .center .box-b h5 {
   margin-top: 0.8rem;
   margin-bottom: 0;
+  font-size: 1.4vw;
 }
 
 .main .center .box-c {
