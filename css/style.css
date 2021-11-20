@@ -56,7 +56,6 @@ body {
 }
 
 #header .logo {
-  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -141,28 +140,6 @@ body {
           animation: bigtext 2s linear;
 }
 
-@-webkit-keyframes bigtext {
-  from {
-    -webkit-transform: translateX(50%);
-            transform: translateX(50%);
-  }
-  to {
-    -webkit-transform: translateX(0%);
-            transform: translateX(0%);
-  }
-}
-
-@keyframes bigtext {
-  from {
-    -webkit-transform: translateX(50%);
-            transform: translateX(50%);
-  }
-  to {
-    -webkit-transform: translateX(0%);
-            transform: translateX(0%);
-  }
-}
-
 .main .btn {
   font-size: 0.8rem;
   width: 8rem;
@@ -173,24 +150,6 @@ body {
   font-weight: 500;
   -webkit-animation: centerbutton 2s linear;
           animation: centerbutton 2s linear;
-}
-
-@-webkit-keyframes centerbutton {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
-
-@keyframes centerbutton {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
 }
 
 .main .btn:hover {
@@ -214,38 +173,72 @@ body {
           justify-content: center;
 }
 
-.main .social * {
-  margin: 0 0.5rem;
-}
-
 .main .social .facebook {
-  width: 2.5rem;
+  width: 2rem;
+  margin: 0 0.5vw;
   -webkit-animation: facemove 2s linear;
           animation: facemove 2s linear;
-  opacity: 1;
-  margin-right: 0.7rem;
 }
 
 .main .social .whatsapp {
-  width: 2.5rem;
+  width: 2rem;
+  margin: 0 0.5vw;
   -webkit-animation: whmove 2s linear;
           animation: whmove 2s linear;
-  opacity: 1;
-  margin-right: 0.7rem;
 }
 
 .main .social .instagram {
-  width: 2.5rem;
+  width: 2rem;
+  margin: 0 0.5vw;
   -webkit-animation: insmove 2s linear;
           animation: insmove 2s linear;
-  opacity: 1;
-  margin-right: 0.7rem;
 }
 
 .main .social .facebook:hover,
 .main .social .whatsapp:hover,
 .main .social .instagram:hover {
   opacity: 0.5;
+}
+
+/*--------------Main Codes------------------------------*/
+/*--------------Keyframes------------------------------*/
+@-webkit-keyframes bigtext {
+  from {
+    -webkit-transform: translateX(50%);
+            transform: translateX(50%);
+  }
+  to {
+    -webkit-transform: translateX(0%);
+            transform: translateX(0%);
+  }
+}
+@keyframes bigtext {
+  from {
+    -webkit-transform: translateX(50%);
+            transform: translateX(50%);
+  }
+  to {
+    -webkit-transform: translateX(0%);
+            transform: translateX(0%);
+  }
+}
+
+@-webkit-keyframes centerbutton {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes centerbutton {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 @-webkit-keyframes facemove {
@@ -319,4 +312,79 @@ body {
             transform: rotate(360deg) translateX(0);
   }
 }
+
+/*--------------Keyframes------------------------------*/
+/*--------------Media Queries------------------------------*/
+@media screen and (max-width: 768px) {
+  #page {
+    height: auto;
+  }
+  #header {
+    display: -ms-grid;
+    display: grid;
+    height: 20vh;
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
+  #header #menu {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  #header #menu .nav-link {
+    font-size: 2vw;
+  }
+  .main {
+    height: 80vh;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  #page {
+    height: auto;
+  }
+  #header {
+    display: -ms-grid;
+    display: grid;
+    height: 20vh;
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
+  #header #menu {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  #header #menu .nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  #header #menu .nav-link {
+    font-size: 3vw;
+  }
+  .main {
+    height: 80vh;
+  }
+}
+
+/*--------------Media Queries------------------------------*/
 /*# sourceMappingURL=style.css.map */

@@ -41,7 +41,7 @@ body {
   background: #cbd7d7;
   background: -webkit-gradient(linear, left top, left bottom, from(#cbd7d7), to(#f8f8f8));
   background: linear-gradient(180deg, #cbd7d7 0%, #f8f8f8 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#cbd7d7",endColorstr="#f8f8f8",GradientType=1);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#cbd7d7", endColorstr="#f8f8f8", GradientType=1);
 }
 
 /*--------------Header Codes------------------------------*/
@@ -147,28 +147,6 @@ body {
           animation: box1 1s linear;
 }
 
-@-webkit-keyframes box1 {
-  from {
-    -webkit-transform: translateY(100%);
-            transform: translateY(100%);
-  }
-  to {
-    -webkit-transform: translateY(0%);
-            transform: translateY(0%);
-  }
-}
-
-@keyframes box1 {
-  from {
-    -webkit-transform: translateY(100%);
-            transform: translateY(100%);
-  }
-  to {
-    -webkit-transform: translateY(0%);
-            transform: translateY(0%);
-  }
-}
-
 .main .img-box2 {
   padding: 1rem;
   min-width: 60%;
@@ -177,28 +155,6 @@ body {
   max-height: 100%;
   -webkit-animation: box2 1s linear;
           animation: box2 1s linear;
-}
-
-@-webkit-keyframes box2 {
-  from {
-    -webkit-transform: translateY(-100%);
-            transform: translateY(-100%);
-  }
-  to {
-    -webkit-transform: translateY(0%);
-            transform: translateY(0%);
-  }
-}
-
-@keyframes box2 {
-  from {
-    -webkit-transform: translateY(-100%);
-            transform: translateY(-100%);
-  }
-  to {
-    -webkit-transform: translateY(0%);
-            transform: translateY(0%);
-  }
 }
 
 .main .center {
@@ -230,16 +186,20 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  width: 80%;
-  height: 10%;
+  width: 90%;
+  height: 5rem;
   background: rgba(237, 237, 237, 0.2);
   border: 0.13rem solid rgba(201, 74, 144, 0.5);
   border-radius: 2.5rem;
 }
 
+.main .center .box-a * {
+  width: 2rem;
+}
+
 .main .center .box-b {
-  width: 80%;
-  height: 20%;
+  width: 90%;
+  height: 10rem;
   background: rgba(237, 237, 237, 0.2);
   border: 0.13rem solid rgba(201, 74, 144, 0.5);
   border-radius: 2.5rem;
@@ -257,8 +217,8 @@ body {
 }
 
 .main .center .box-c {
-  width: 80%;
-  height: 40%;
+  width: 90%;
+  height: 15rem;
   background: rgba(237, 237, 237, 0.2);
   border: 0.13rem solid rgba(201, 74, 144, 0.5);
   border-radius: 2.5rem;
@@ -286,4 +246,177 @@ body {
   width: 100%;
   height: 100%;
 }
+
+/*--------------Main Codes------------------------------*/
+/*--------------Keyframes------------------------------*/
+@-webkit-keyframes box1 {
+  from {
+    -webkit-transform: translateY(100%);
+            transform: translateY(100%);
+  }
+  to {
+    -webkit-transform: translateY(0%);
+            transform: translateY(0%);
+  }
+}
+@keyframes box1 {
+  from {
+    -webkit-transform: translateY(100%);
+            transform: translateY(100%);
+  }
+  to {
+    -webkit-transform: translateY(0%);
+            transform: translateY(0%);
+  }
+}
+
+@-webkit-keyframes box2 {
+  from {
+    -webkit-transform: translateY(-100%);
+            transform: translateY(-100%);
+  }
+  to {
+    -webkit-transform: translateY(0%);
+            transform: translateY(0%);
+  }
+}
+
+@keyframes box2 {
+  from {
+    -webkit-transform: translateY(-100%);
+            transform: translateY(-100%);
+  }
+  to {
+    -webkit-transform: translateY(0%);
+            transform: translateY(0%);
+  }
+}
+
+/*--------------Keyframes------------------------------*/
+/*--------------Media Queries------------------------------*/
+@media screen and (max-width: 768px) {
+  #page {
+    height: auto;
+  }
+  #header {
+    display: -ms-grid;
+    display: grid;
+    height: 20vh;
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
+  #header #menu {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  #header #menu .nav-link {
+    font-size: 2vw;
+  }
+  .main {
+    display: -ms-grid;
+    display: grid;
+    height: auto;
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
+  .box-a {
+    max-width: 60%;
+  }
+  .box-b {
+    max-width: 80%;
+  }
+  h5 {
+    width: 100%;
+    height: 10%;
+    text-align: center;
+    font-size: 3vw !important;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+  p {
+    margin-top: 0;
+    margin-bottom: 0;
+    width: 100%;
+    height: 40%;
+    text-align: center;
+    font-size: 2.5vw !important;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  #page {
+    height: auto;
+  }
+  #header {
+    display: -ms-grid;
+    display: grid;
+    height: 20vh;
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
+  #header #menu {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  #header #menu .nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  #header #menu .nav-link {
+    font-size: 3vw;
+  }
+  h5 {
+    width: 100%;
+    height: 40%;
+    text-align: center;
+    font-size: 4vw !important;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+  p {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    font-size: 4vw !important;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .nav-link {
+    font-size: 0.9vw !important;
+  }
+  .box-a {
+    max-width: 60%;
+  }
+  .box-b {
+    max-width: 80%;
+  }
+  .main {
+    -ms-grid-columns: 1fr 0.8fr 1fr;
+        grid-template-columns: 1fr 0.8fr 1fr;
+  }
+}
+
+/*--------------Media Queries------------------------------*/
 /*# sourceMappingURL=contactstyle.css.map */

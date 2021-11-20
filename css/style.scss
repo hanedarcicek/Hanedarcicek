@@ -23,7 +23,6 @@ body {
     grid-template-rows: 1fr;
 
     .logo {
-        width: 100%;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -50,26 +49,24 @@ body {
             color: #C94A90;
             font-weight: 500;
             border-radius: 0.6rem;
-
         }
 
         #page-act {
             border: 2px solid #C94A90;
             opacity: 0.2;
             border-radius: 0.6rem;
-
-
         }
     }
-
 }
 
 /*--------------Header Codes------------------------------*/
 
+
+
+
 /*--------------Main Codes------------------------------*/
 
 .main {
-
     width: 100%;
     height: 90vh;
     display: grid;
@@ -87,19 +84,8 @@ body {
         margin-bottom: 30%;
     }
 
-
     h1 {
         animation: bigtext 2s linear;
-    }
-
-    @keyframes bigtext {
-        from {
-            transform: translateX(50%);
-        }
-
-        to {
-            transform: translateX(0%);
-        }
     }
 
     .btn {
@@ -112,16 +98,6 @@ body {
         font-weight: 500;
         animation: centerbutton 2s linear;
 
-    }
-
-    @keyframes centerbutton {
-        from {
-            opacity: 0;
-        }
-
-        to {
-            opacity: 1;
-        }
     }
 
     .btn:hover {
@@ -139,29 +115,22 @@ body {
         align-items: center;
         justify-content: center;
 
-        * {
-            margin: 0 0.5rem;
-        }
-
         .facebook {
-            width: 2.5rem;
+            width: 2rem;
+            margin: 0 0.5vw;
             animation: facemove 2s linear;
-            opacity: 1;
-            margin-right: 0.7rem;
         }
 
         .whatsapp {
-            width: 2.5rem;
+            width: 2rem;
+            margin: 0 0.5vw;
             animation: whmove 2s linear;
-            opacity: 1;
-            margin-right: 0.7rem;
         }
 
         .instagram {
-            width: 2.5rem;
+            width: 2rem;
+            margin: 0 0.5vw;
             animation: insmove 2s linear;
-            opacity: 1;
-            margin-right: 0.7rem;
         }
 
         .facebook:hover,
@@ -170,27 +139,34 @@ body {
 
             opacity: 0.5;
         }
-
-
-
     }
-
-
 
 }
 
+/*--------------Main Codes------------------------------*/
 
 
 
+/*--------------Keyframes------------------------------*/
+@keyframes bigtext {
+    from {
+        transform: translateX(50%);
+    }
 
+    to {
+        transform: translateX(0%);
+    }
+}
 
+@keyframes centerbutton {
+    from {
+        opacity: 0;
+    }
 
-
-
-
-
-
-
+    to {
+        opacity: 1;
+    }
+}
 
 @keyframes facemove {
 
@@ -230,3 +206,85 @@ body {
     }
 
 }
+
+/*--------------Keyframes------------------------------*/
+
+
+
+/*--------------Media Queries------------------------------*/
+
+@media screen and (max-width: 768px) {
+
+    #page {
+
+        height: auto;
+    }
+
+    #header {
+        display: grid;
+        height: 20vh;
+        grid-template-columns: 1fr;
+
+        #menu {
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            .nav-link {
+                font-size: 2vw;
+            }
+
+        }
+
+
+    }
+
+    .main {
+        height: 80vh;
+    }
+
+}
+
+
+@media screen and (max-width: 576px) {
+
+    #page {
+
+        height: auto;
+    }
+
+    #header {
+        display: grid;
+        height: 20vh;
+        grid-template-columns: 1fr;
+
+        #menu {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            
+            .nav{
+       
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+            }
+            .nav-link {
+                font-size: 3vw;
+            }
+
+        }
+
+
+    }
+
+    .main {
+        height: 80vh;
+
+    }
+
+}
+
+/*--------------Media Queries------------------------------*/
