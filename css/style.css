@@ -386,5 +386,11 @@ body {
   }
 }
 
+@media screen and (min-width: 1440px) {
+  .nav-link {
+    font-size: 0.9vw !important;
+  }
+}
+
 /*--------------Media Queries------------------------------*/
 /*# sourceMappingURL=style.css.map */
