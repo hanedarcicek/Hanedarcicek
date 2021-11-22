@@ -68,7 +68,7 @@ body {
 
 
 
-/*--------------Header Codes------------------------------*/
+/*--------------Carousel Codes------------------------------*/
 .carousel-inner {
     height: auto;
     max-height: 20rem;
@@ -77,21 +77,22 @@ body {
 
 }
 
-.img-height {
+.img-height{
     height: auto;
+    min-height: 8rem;
 
 
 
 }
 
-/*--------------Header Codes------------------------------*/
+/*--------------Carousel Codes------------------------------*/
 
 
 
 
 
 /*--------------Main Codes------------------------------*/
-#cards {
+#cards{
     display: flex;
     align-items: center;
     justify-content: center;
@@ -100,7 +101,19 @@ body {
         color: #C94A90;
     }
 
+    .card img{
+        transform: scale(0.90);
+       
+    }
+    
+    .card img:hover{
+        
+        transform: scale(1);
+    
+    }
+
 }
+
 
 /*--------------Main Codes------------------------------*/
 

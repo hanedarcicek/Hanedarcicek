@@ -106,7 +106,7 @@ body {
 }
 
 /*--------------Header Codes------------------------------*/
-/*--------------Header Codes------------------------------*/
+/*--------------Carousel Codes------------------------------*/
 .carousel-inner {
   height: auto;
   max-height: 20rem;
@@ -115,9 +115,10 @@ body {
 
 .img-height {
   height: auto;
+  min-height: 8rem;
 }
 
-/*--------------Header Codes------------------------------*/
+/*--------------Carousel Codes------------------------------*/
 /*--------------Main Codes------------------------------*/
 #cards {
   display: -webkit-box;
@@ -133,6 +134,16 @@ body {
 
 #cards h5 {
   color: #C94A90;
+}
+
+#cards .card img {
+  -webkit-transform: scale(0.9);
+          transform: scale(0.9);
+}
+
+#cards .card img:hover {
+  -webkit-transform: scale(1);
+          transform: scale(1);
 }
 
 /*--------------Main Codes------------------------------*/
