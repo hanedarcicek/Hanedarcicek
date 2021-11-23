@@ -3,17 +3,9 @@
 $primary-color: #C94A90;
 $f8text : #f8f8f8f8;
 
-
-
 body {
     font-size: 16px;
     font-family: 'Sriracha', cursive;
-    width: 100%;
-    height: auto;
-
-}
-
-#page {
     width: 100%;
     height: auto;
     background: rgb(203, 215, 215);
@@ -21,6 +13,7 @@ body {
     background: -webkit-linear-gradient(180deg, rgba(203, 215, 215, 1) 0%, rgba(248, 248, 248, 1) 100%);
     background: linear-gradient(180deg, rgba(203, 215, 215, 1) 0%, rgba(248, 248, 248, 1) 100%);
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#cbd7d7", endColorstr="#f8f8f8", GradientType=1);
+
 }
 
 /*--------------Header Codes------------------------------*/
@@ -69,26 +62,6 @@ body {
 }
 
 /*--------------Header Codes------------------------------*/
-
-
-
-/*--------------Carousel Codes------------------------------*/
-.carousel-inner {
-    height: auto;
-    max-height: 20rem;
-    overflow: hidden;
-}
-
-.img-height{
-    height: auto;
-    min-height: 8rem;
-}
-
-
-/*--------------Carousel Codes------------------------------*/
-
-
-
 
 
 /*--------------Main Codes------------------------------*/
@@ -156,10 +129,6 @@ body {
 
 @media screen and (max-width: 768px) {
 
-    #page {
-
-        height: auto;
-    }
 
     #header {
         display: grid;
@@ -264,15 +233,6 @@ body {
     .nav-link {
         font-size: 0.9vw !important;
     }
-
-    .carousel-inner {
-        height: auto;
-        max-height: 25rem;
-        overflow: hidden;
-
-
-    }
-
 
 }
 

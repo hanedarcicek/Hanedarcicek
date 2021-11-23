@@ -31,7 +31,7 @@ ul {
 
 body {
   font-size: 16px;
-  background-color: #f3f3f3f8;
+  background-color: #f8f8f8f8;
   font-family: 'Sriracha', cursive;
 }
 
@@ -260,15 +260,11 @@ body {
       grid-template-columns: 1fr 1fr 1fr 1fr;
   -ms-grid-rows: 1fr;
       grid-template-rows: 1fr;
-  background-color: #f3f3f3f8;
+  background-color: #f8f8f8f8;
   border-top-left-radius: 1rem;
   border-top-right-radius: 1rem;
   color: #C94A90;
   border: 0.2vw solid #C94A90;
-}
-
-#footer .specialborder {
-  border-left: 0.2vw solid #C94A90;
 }
 
 #footer small {

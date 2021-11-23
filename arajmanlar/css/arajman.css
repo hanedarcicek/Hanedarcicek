@@ -34,11 +34,6 @@ body {
   font-family: 'Sriracha', cursive;
   width: 100%;
   height: auto;
-}
-
-#page {
-  width: 100%;
-  height: auto;
   background: #cbd7d7;
   background: -webkit-gradient(linear, left top, left bottom, from(#cbd7d7), to(#f8f8f8));
   background: linear-gradient(180deg, #cbd7d7 0%, #f8f8f8 100%);
@@ -106,19 +101,6 @@ body {
 }
 
 /*--------------Header Codes------------------------------*/
-/*--------------Carousel Codes------------------------------*/
-.carousel-inner {
-  height: auto;
-  max-height: 20rem;
-  overflow: hidden;
-}
-
-.img-height {
-  height: auto;
-  min-height: 8rem;
-}
-
-/*--------------Carousel Codes------------------------------*/
 /*--------------Main Codes------------------------------*/
 #cards {
   display: -webkit-box;
@@ -242,9 +224,6 @@ body {
 /*--------------Keyframes------------------------------*/
 /*--------------Media Queries------------------------------*/
 @media screen and (max-width: 768px) {
-  #page {
-    height: auto;
-  }
   #header {
     display: -ms-grid;
     display: grid;
@@ -346,11 +325,6 @@ body {
   .nav-link {
     font-size: 0.9vw !important;
   }
-  .carousel-inner {
-    height: auto;
-    max-height: 25rem;
-    overflow: hidden;
-  }
 }
 
 @media screen and (min-width: 1440px) {
@@ -363,4 +337,4 @@ body {
 }
 
 /*--------------Media Queries------------------------------*/
-/*# sourceMappingURL=bitki.css.map */
+/*# sourceMappingURL=arajman.css.map */

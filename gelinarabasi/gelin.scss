@@ -3,14 +3,11 @@
 $primary-color: #C94A90;
 $f8text : #f8f8f8f8;
 
-
-
 body {
     font-size: 16px;
     font-family: 'Sriracha', cursive;
     width: 100%;
     height: auto;
-
 }
 
 #page {
@@ -71,86 +68,52 @@ body {
 /*--------------Header Codes------------------------------*/
 
 
+/*--------------Top Anima Codes------------------------------*/
 
-/*--------------Carousel Codes------------------------------*/
-.carousel-inner {
+.anima-box{
     height: auto;
-    max-height: 20rem;
     overflow: hidden;
 }
-
-.img-height{
-    height: auto;
-    min-height: 8rem;
-}
-
-
-/*--------------Carousel Codes------------------------------*/
-
-
-
-
-
-/*--------------Main Codes------------------------------*/
-#cards{
+.right-para{
+    
     display: flex;
     align-items: center;
     justify-content: center;
+    height: auto;
     
 
-    h5 {
-        color: $primary-color;
-    }
-    
-    .card:hover{
+    p{
+        color: #080808;
+        font-size: 1rem;
+        word-spacing: 1;
+        line-height: 1.6;
         border:0.2vw solid $primary-color;
+        background-color: $primary-color;
+        color: $f8text;
+        border-radius: 0.4rem;
     }
-    .card img{
-        transform: scale(0.90);
-        
-       
-    }
-    
-    .card img:hover{
-        
-        transform: scale(1);
-        
-    
-    }
-
+   
+}
+.photo-box{
+    height: 25rem;
+    position: relative;
+}
+.left-photo{
+    position: absolute;
+    animation: move 2s linear;
 }
 
 
-/*--------------Main Codes------------------------------*/
+/*--------------Top Anima Codes------------------------------*/
 
 
 
 /*--------------Keyframes------------------------------*/
-@keyframes move{
-    
-    0%   {top:120%; left:0;}
-    20%  {top:110%;left:0;}
-    40%  {top:100%;left:0; }
-    60%  {top:80%;left:0; }
-    80%  {top:40%;left:0; }
-   100%  {top:0;left:0;}
 
-}
-
-@keyframes show{
-    
-    0%   {opacity:0;}
-    20%  {}
-    40%  {}
-    60%  {}
-    80%  {}
-   100%  {opacity:1;}
-
-}
-
-/*--------------Keyframes------------------------------*/
-
-
+@keyframes move {
+    from {top: 80%;}
+    to {top: 0;}
+  }
 
 /*--------------Media Queries------------------------------*/
 
@@ -217,7 +180,7 @@ body {
 
 /*--------------Footer Codes------------------------------*/
 
-@media screen and (max-width: 576px) {
+@media screen and (max-width: 768px) {
 
     #page {
 
@@ -243,12 +206,17 @@ body {
             }
 
             .nav-link {
-                font-size: 3vw;
+                font-size: 2vw;
             }
 
         }
 
 
+    }
+    .left-photo{
+        position: absolute;
+        right: 7%;
+        bottom: 5%;
     }
 
     #footer {
@@ -265,14 +233,6 @@ body {
         font-size: 0.9vw !important;
     }
 
-    .carousel-inner {
-        height: auto;
-        max-height: 25rem;
-        overflow: hidden;
-
-
-    }
-
 
 }
 
@@ -286,6 +246,10 @@ body {
 
         font-size: 1vw !important;
 
+    }
+
+    .photo-box{
+        height: 35rem;
     }
 
 
