@@ -75,28 +75,28 @@ body {
       -ms-flex-pack: end;
           justify-content: end;
   height: 10vh;
-  width: 100%;
-  font-size: 1.2rem;
 }
 
 #header #menu .nav-link {
-  color: #b9337d;
+  background-color: #f8f8f8f8;
+  color: #C94A90;
+  border: 2px solid #C94A90;
   font-size: 1.1vw;
   font-weight: 500;
-  margin-left: 0.4rem;
+  margin-left: 0.75vw;
+  border-radius: 0.6rem;
 }
 
 #header #menu .nav-link:hover {
   background-color: #f8f8f8f8;
   border: 2px solid #C94A90;
   color: #C94A90;
-  font-weight: 500;
   border-radius: 0.6rem;
 }
 
 #header #menu #page-act {
   border: 2px solid #C94A90;
-  opacity: 0.2;
+  opacity: 0.5;
   border-radius: 0.6rem;
 }
 
@@ -336,31 +336,6 @@ body {
 }
 
 /*--------------Keyframes------------------------------*/
-/*--------------Media Queries------------------------------*/
-@media screen and (max-width: 768px) {
-  #header {
-    display: -ms-grid;
-    display: grid;
-    height: 20vh;
-    -ms-grid-columns: 1fr;
-        grid-template-columns: 1fr;
-  }
-  #header #menu {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-  }
-  #header #menu .nav-link {
-    font-size: 2vw;
-  }
-}
-
 /*--------------Footer Codes------------------------------*/
 #footer {
   width: 100%;
@@ -390,10 +365,8 @@ body {
 }
 
 /*--------------Footer Codes------------------------------*/
-@media screen and (max-width: 576px) {
-  #page {
-    height: auto;
-  }
+/*--------------Media Queries------------------------------*/
+@media screen and (max-width: 768px) {
   #header {
     display: -ms-grid;
     display: grid;
@@ -412,7 +385,23 @@ body {
         -ms-flex-pack: center;
             justify-content: center;
   }
-  #header #menu .nav {
+  #header #menu .nav-link {
+    font-size: 2vw;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  #page {
+    height: auto;
+  }
+  #header {
+    display: -ms-grid;
+    display: grid;
+    height: 25vh;
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
+  #header #menu {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -422,8 +411,18 @@ body {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+    margin-top: 2vw;
+  }
+  #header #menu .nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
   #header #menu .nav-link {
+    margin: 1vw;
     font-size: 3vw;
   }
   .anima {

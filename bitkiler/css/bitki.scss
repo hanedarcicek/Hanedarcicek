@@ -4,17 +4,9 @@ $primary-color: #C94A90;
 $f8text : #f8f8f8f8;
 $navbar : #b9337d;
 
-
-
 body {
     font-size: 16px;
     font-family: 'Sriracha', cursive;
-    width: 100%;
-    height: auto;
-
-}
-
-#page {
     width: 100%;
     height: auto;
     background: rgb(75,164,186);
@@ -23,6 +15,7 @@ body {
     background: linear-gradient(180deg, rgba(75,164,186,1) 0%, rgba(175,167,187,1) 20%, rgba(244,192,179,1) 100%);
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#4ba4ba",endColorstr="#f4c0b3",GradientType=1);
 }
+
 
 /*--------------Header Codes------------------------------*/
 #header {
@@ -43,27 +36,27 @@ body {
         align-items: center;
         justify-content: end;
         height: 10vh;
-        width: 100%;
-        font-size: 1.2rem;
 
         .nav-link {
-            color: $navbar;
+            background-color: $f8text;
+            color: $primary-color;
+            border: 2px solid $primary-color;
             font-size: 1.1vw;
             font-weight: 500;
-            margin-left: 0.4rem;
+            margin-left: 0.75vw;
+            border-radius: 0.6rem;
         }
 
         .nav-link:hover {
             background-color: $f8text;
             border: 2px solid $primary-color;
             color: $primary-color;
-            font-weight: 500;
             border-radius: 0.6rem;
         }
 
         #page-act {
             border: 2px solid $primary-color;
-            opacity: 0.2;
+            opacity: 0.5;
             border-radius: 0.6rem;
         }
     }
@@ -151,38 +144,6 @@ body {
 
 
 
-/*--------------Media Queries------------------------------*/
-
-@media screen and (max-width: 768px) {
-
-    #page {
-
-        height: auto;
-    }
-
-    #header {
-        display: grid;
-        height: 20vh;
-        grid-template-columns: 1fr;
-
-        #menu {
-
-            display: flex;
-            align-items: center;
-            justify-content: center;
-
-            .nav-link {
-                font-size: 2vw;
-            }
-
-        }
-
-
-    }
-
-
-}
-
 /*--------------Footer Codes------------------------------*/
 #footer{
     width: 100%;
@@ -216,6 +177,36 @@ body {
 
 /*--------------Footer Codes------------------------------*/
 
+
+
+
+/*--------------Media Queries------------------------------*/
+
+@media screen and (max-width: 768px) {
+
+
+    #header {
+        display: grid;
+        height: 20vh;
+        grid-template-columns: 1fr;
+
+        #menu {
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            .nav-link {
+                font-size: 2vw;
+            }
+
+        }
+
+
+    }
+
+
+}
 @media screen and (max-width: 576px) {
 
     #page {
@@ -225,23 +216,24 @@ body {
 
     #header {
         display: grid;
-        height: 20vh;
+        height: 25vh;
         grid-template-columns: 1fr;
 
         #menu {
             display: flex;
             align-items: center;
             justify-content: center;
-
+            margin-top:2vw;
+            
             .nav {
-
                 display: flex;
-                align-items: center;
                 justify-content: center;
+                
 
             }
 
             .nav-link {
+                margin:1vw;
                 font-size: 3vw;
             }
 
@@ -250,31 +242,37 @@ body {
 
     }
 
+    .anima{
+        flex-direction: column-reverse;
+        align-items: center;
+        justify-content: center;
+
+        .mobile-center{
+            margin-top: 2rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            text-align: center;
+        }
+    }
+
     #footer {
         display: none;
 
     }
 
 
-}
 
+
+}
 @media screen and (min-width: 1280px) {
 
     .nav-link {
         font-size: 0.9vw !important;
     }
 
-    .carousel-inner {
-        height: auto;
-        max-height: 25rem;
-        overflow: hidden;
-
-
-    }
-
-
 }
-
 @media screen and (min-width: 1440px) {
 
     .nav-link {
