@@ -31,13 +31,12 @@ ul {
 
 body {
   font-size: 16px;
-  background-color: #f8f8f8f8;
   font-family: 'Sriracha', cursive;
+  width: 100%;
+  height: auto;
 }
 
 #page {
-  width: 100%;
-  height: 100vh;
   background-image: url(./css-image/backy.jpg);
   background-size: cover;
   background-position: center;
@@ -78,28 +77,28 @@ body {
       -ms-flex-pack: end;
           justify-content: end;
   height: 10vh;
-  width: 100%;
-  font-size: 1.2rem;
 }
 
 #header #menu .nav-link {
+  background-color: #f8f8f8f8;
   color: #C94A90;
+  border: 2px solid #C94A90;
   font-size: 1.1vw;
   font-weight: 500;
-  margin-left: 0.4rem;
+  margin-left: 0.75vw;
+  border-radius: 0.6rem;
 }
 
 #header #menu .nav-link:hover {
   background-color: #f8f8f8f8;
   border: 2px solid #C94A90;
   color: #C94A90;
-  font-weight: 500;
   border-radius: 0.6rem;
 }
 
 #header #menu #page-act {
   border: 2px solid #C94A90;
-  opacity: 0.2;
+  opacity: 0.5;
   border-radius: 0.6rem;
 }
 
@@ -132,7 +131,6 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  margin-bottom: 30%;
 }
 
 .main h1 {
@@ -162,6 +160,7 @@ body {
 }
 
 .main .social {
+  width: 60%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -220,10 +219,6 @@ body {
   border-top-right-radius: 1rem;
   color: #C94A90;
   border: 0.2vw solid #C94A90;
-}
-
-#footer .specialborder {
-  border-left: 0.2vw solid #C94A90;
 }
 
 #footer small {
@@ -350,7 +345,7 @@ body {
 /*--------------Media Queries------------------------------*/
 @media screen and (max-width: 768px) {
   #page {
-    height: auto;
+    height: 100vh;
   }
   #header {
     display: -ms-grid;
@@ -374,7 +369,10 @@ body {
     font-size: 2vw;
   }
   .main {
-    height: 75vh;
+    height: 70vh;
+  }
+  #footer {
+    display: 10vh;
   }
 }
 
@@ -385,7 +383,7 @@ body {
   #header {
     display: -ms-grid;
     display: grid;
-    height: 20vh;
+    height: 25vh;
     -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
   }
@@ -399,26 +397,35 @@ body {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+    margin-top: 2vw;
   }
   #header #menu .nav {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
   }
   #header #menu .nav-link {
+    margin: 1vw;
     font-size: 3vw;
   }
   .main {
     height: 80vh;
   }
+  .right-side {
+    height: 60vh;
+    margin-right: 1rem;
+  }
   #footer {
     display: none;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .nav-link {
+    font-size: 0.9vw !important;
   }
 }
 
