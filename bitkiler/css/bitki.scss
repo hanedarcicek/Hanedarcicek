@@ -2,6 +2,7 @@
 
 $primary-color: #C94A90;
 $f8text : #f8f8f8f8;
+$navbar : #b9337d;
 
 
 
@@ -16,11 +17,11 @@ body {
 #page {
     width: 100%;
     height: auto;
-    background: rgb(203, 215, 215);
-    background: -moz-linear-gradient(180deg, rgba(203, 215, 215, 1) 0%, rgba(248, 248, 248, 1) 100%);
-    background: -webkit-linear-gradient(180deg, rgba(203, 215, 215, 1) 0%, rgba(248, 248, 248, 1) 100%);
-    background: linear-gradient(180deg, rgba(203, 215, 215, 1) 0%, rgba(248, 248, 248, 1) 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#cbd7d7", endColorstr="#f8f8f8", GradientType=1);
+    background: rgb(75,164,186);
+    background: -moz-linear-gradient(180deg, rgba(75,164,186,1) 0%, rgba(175,167,187,1) 20%, rgba(244,192,179,1) 100%);
+    background: -webkit-linear-gradient(180deg, rgba(75,164,186,1) 0%, rgba(175,167,187,1) 20%, rgba(244,192,179,1) 100%);
+    background: linear-gradient(180deg, rgba(75,164,186,1) 0%, rgba(175,167,187,1) 20%, rgba(244,192,179,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#4ba4ba",endColorstr="#f4c0b3",GradientType=1);
 }
 
 /*--------------Header Codes------------------------------*/
@@ -46,7 +47,7 @@ body {
         font-size: 1.2rem;
 
         .nav-link {
-            color: $primary-color;
+            color: $navbar;
             font-size: 1.1vw;
             font-weight: 500;
             margin-left: 0.4rem;
@@ -102,9 +103,7 @@ body {
         color: $primary-color;
     }
     
-    .card:hover{
-        border:0.2vw solid $primary-color;
-    }
+
     .card img{
         transform: scale(0.90);
         
