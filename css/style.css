@@ -226,7 +226,7 @@ body {
   color: #f8f8f8f8;
   position: absolute;
   width: 90%;
-  height: 100%;
+  height: 100vh;
   right: 0;
   display: none;
   -webkit-box-align: center;
@@ -434,8 +434,8 @@ body {
     background-image: url(./css-image/mobwall.jpg);
     background-size: cover;
     background-position: center;
-    -webkit-backdrop-filter: url(filters.svg#filter) brightness(50%);
-            backdrop-filter: url(filters.svg#filter) brightness(50%);
+    -webkit-backdrop-filter: url(filters.svg#filter) brightness(80%);
+            backdrop-filter: url(filters.svg#filter) brightness(80%);
   }
   #header {
     display: -ms-grid;
