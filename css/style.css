@@ -97,7 +97,7 @@ body {
 /*--------------Main Codes------------------------------*/
 .main {
   width: 100%;
-  height: 85vh;
+  height: 98vh;
   display: -ms-grid;
   display: grid;
   -webkit-box-pack: center;
@@ -220,6 +220,70 @@ body {
 }
 
 /*--------------Footer Codes------------------------------*/
+/*--------------Hamburger Menu Codes------------------------------*/
+#hamb-menu {
+  background-color: #C94A90;
+  color: #f8f8f8f8;
+  position: absolute;
+  width: 90%;
+  height: 100%;
+  right: 0;
+  display: none;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  z-index: 2;
+}
+
+#hamb-menu a,
+#hamb-menu a:active,
+#hamb-menu a:checked,
+#hamb-menu a:hover {
+  color: #f8f8f8f8;
+}
+
+#hamb-menu .nav-item {
+  width: 80%;
+  text-align: center;
+  border-bottom: 2px solid #f8f8f8f8;
+}
+
+#hamb-menu .nav-link {
+  font-size: 4.4vw;
+}
+
+#closer {
+  display: none;
+  background-color: #C94A90;
+  position: absolute;
+  right: 1rem;
+  top: 1rem;
+  width: 2.5rem;
+  height: 2.7rem;
+  z-index: 3;
+  border-radius: 0.5rem;
+  font-size: 1.6rem;
+  border: 2px solid #f8f8f8f8;
+  color: #f8f8f8f8;
+}
+
+.hamb {
+  width: 1.8rem;
+  height: 1.8rem;
+  z-index: 2;
+  right: 0;
+  top: 0;
+  margin: 0;
+}
+
+/*--------------Hamburger Menu Codes------------------------------*/
 /*--------------Keyframes------------------------------*/
 @-webkit-keyframes bigtext {
   from {
@@ -370,42 +434,27 @@ body {
     background-image: url(./css-image/mobwall.jpg);
     background-size: cover;
     background-position: center;
-    -webkit-backdrop-filter: url(filters.svg#filter) blur(1px) brightness(40%);
-            backdrop-filter: url(filters.svg#filter) blur(1px) brightness(40%);
+    -webkit-backdrop-filter: url(filters.svg#filter) brightness(50%);
+            backdrop-filter: url(filters.svg#filter) brightness(50%);
   }
   #header {
     display: -ms-grid;
     display: grid;
-    height: 25vh;
-    -ms-grid-columns: 1fr;
-        grid-template-columns: 1fr;
+    height: 5rem;
+    -ms-grid-columns: 1fr 0.05fr;
+        grid-template-columns: 1fr 0.05fr;
   }
   #header #menu {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    margin-top: 2vw;
+    display: none;
   }
-  #header #menu .nav {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-  }
-  #header #menu .nav-link {
-    margin: 1vw;
-    font-size: 3vw;
+  .hamb {
+    display: inline-block;
+    position: absolute;
+    right: 1rem;
+    top: 1.5rem;
   }
   .main {
-    height: 80vh;
+    height: 95vh;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -420,7 +469,7 @@ body {
     display: none;
   }
   .right-side {
-    margin-top: 10vw;
+    margin-top: 40vw;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -433,12 +482,18 @@ body {
   }
   .right-side h1 {
     color: #f8f8f8f8;
-    margin-left: 1rem;
+    margin-left: 1.2rem;
   }
   .right-side .social {
     width: 70%;
   }
   #footer {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 576px) {
+  .hamb {
     display: none;
   }
 }
