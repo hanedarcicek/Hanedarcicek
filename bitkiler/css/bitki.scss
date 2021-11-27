@@ -112,8 +112,88 @@ body {
 
 }
 
+.card-body{
+
+    height: 14rem;
+    
+}
+
+.card{
+    
+    float:left;
+}
+
+
+
 
 /*--------------Main Codes------------------------------*/
+
+/*--------------Hamburger Menu Codes------------------------------*/
+#hamb-menu{
+    background-color: $primary-color;
+    color: $f8text;
+    position: absolute;
+    width: 90%;
+    height: 100%;
+    right:0;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    z-index:3;
+
+    a,
+    a:active,
+    a:checked,
+    a:hover
+    {
+        color: $f8text;
+        
+    }
+
+    .nav-item{
+        width: 80%;
+        text-align: center;
+        border-bottom:2px solid $f8text;
+    }
+
+    .nav-link{
+        font-size: 4.4vw;
+
+        
+        
+    }
+
+    
+
+}
+#closer{
+    display: none;
+    background-color: $primary-color;
+    position: absolute;
+    right:1rem;
+    top:1rem;
+    width: 2.5rem;
+    height: 2.7rem;
+    z-index:4;
+    border-radius: 0.5rem;
+    font-size: 1.6rem;
+    border:2px solid $f8text;
+    color: $f8text;
+
+}
+.hamb{
+    width: 1.8rem;
+    height: 1.8rem;
+    z-index: 2;
+    right:0;
+    top:0;
+    margin:0;
+}
+/*--------------Hamburger Menu Codes------------------------------*/
+
+
+
 
 
 
@@ -209,53 +289,27 @@ body {
 }
 @media screen and (max-width: 576px) {
 
-    #page {
-
-        height: auto;
-    }
 
     #header {
         display: grid;
-        height: 25vh;
-        grid-template-columns: 1fr;
+        height: 5rem;
+        grid-template-columns: 1fr 0.05fr;
 
         #menu {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            margin-top:2vw;
-            
-            .nav {
-                display: flex;
-                justify-content: center;
-                
-
-            }
-
-            .nav-link {
-                margin:1vw;
-                font-size: 3vw;
-            }
+            display: none;
 
         }
 
 
     }
 
-    .anima{
-        flex-direction: column-reverse;
-        align-items: center;
-        justify-content: center;
-
-        .mobile-center{
-            margin-top: 2rem;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            flex-direction: column;
-            text-align: center;
-        }
+    .hamb{
+        display: inline-block;
+        position: absolute;
+        right: 1rem;
+        top:1.5rem;
     }
+
 
     #footer {
         display: none;
@@ -264,6 +318,15 @@ body {
 
 
 
+
+}
+@media screen and (min-width: 576px) {
+ 
+    .hamb{
+        display: none;
+
+    }
+   
 
 }
 @media screen and (min-width: 1280px) {
