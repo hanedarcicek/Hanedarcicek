@@ -391,9 +391,6 @@ body {
 }
 
 @media screen and (max-width: 576px) {
-  #page {
-    height: auto;
-  }
   #header {
     display: -ms-grid;
     display: grid;
