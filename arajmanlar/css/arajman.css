@@ -132,6 +132,7 @@ body {
   float: left;
 }
 
+/*--------------Main Codes------------------------------*/
 /*--------------Topbox Codes------------------------------*/
 .img-spec {
   height: 10rem;
@@ -140,8 +141,8 @@ body {
 }
 
 #animation .img-spec {
-  -webkit-animation: imgrise 2.5s linear;
-          animation: imgrise 2.5s linear;
+  -webkit-animation: imgrise 1.5s linear;
+          animation: imgrise 1.5s linear;
 }
 
 .exp-center {
@@ -216,7 +217,7 @@ body {
   color: #f8f8f8f8;
   position: absolute;
   width: 90%;
-  height: 100%;
+  height: 100vh;
   right: 0;
   display: none;
   -webkit-box-align: center;
@@ -310,94 +311,6 @@ body {
   }
   80% {
     opacity: 0.8;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-
-@-webkit-keyframes move {
-  0% {
-    top: 120%;
-    left: 0;
-  }
-  20% {
-    top: 110%;
-    left: 0;
-  }
-  40% {
-    top: 100%;
-    left: 0;
-  }
-  60% {
-    top: 80%;
-    left: 0;
-  }
-  80% {
-    top: 40%;
-    left: 0;
-  }
-  100% {
-    top: 0;
-    left: 0;
-  }
-}
-
-@keyframes move {
-  0% {
-    top: 120%;
-    left: 0;
-  }
-  20% {
-    top: 110%;
-    left: 0;
-  }
-  40% {
-    top: 100%;
-    left: 0;
-  }
-  60% {
-    top: 80%;
-    left: 0;
-  }
-  80% {
-    top: 40%;
-    left: 0;
-  }
-  100% {
-    top: 0;
-    left: 0;
-  }
-}
-
-@-webkit-keyframes show {
-  0% {
-    opacity: 0;
-  }
-  20% {
-  }
-  40% {
-  }
-  60% {
-  }
-  80% {
-  }
-  100% {
-    opacity: 1;
-  }
-}
-
-@keyframes show {
-  0% {
-    opacity: 0;
-  }
-  20% {
-  }
-  40% {
-  }
-  60% {
-  }
-  80% {
   }
   100% {
     opacity: 1;
