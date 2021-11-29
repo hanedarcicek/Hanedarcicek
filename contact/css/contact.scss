@@ -119,7 +119,7 @@ body {
     color: $f8text;
     position: absolute;
     width: 90%;
-    height: 100%;
+    height: 100vh;
     right:0;
     display: none;
     align-items: center;
@@ -234,6 +234,10 @@ body {
         }
 
 
+    }
+
+    #footer{
+        display: none;
     }
 
 
