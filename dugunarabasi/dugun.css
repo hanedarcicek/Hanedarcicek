@@ -295,6 +295,44 @@ body {
 }
 
 /*--------------Topbox Codes------------------------------*/
+.col-3 {
+  float: left;
+}
+
+#cards {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#cards h5 {
+  color: #C94A90;
+}
+
+#cards .card img {
+  -webkit-transform: scale(0.9);
+          transform: scale(0.9);
+}
+
+#cards .card img:hover {
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.card-body {
+  height: 8rem;
+}
+
+.card {
+  float: left;
+}
+
 /*--------------Keyframes------------------------------*/
 @-webkit-keyframes show {
   0% {
@@ -379,6 +417,9 @@ body {
     position: absolute;
     right: 1rem;
     top: 1.5rem;
+  }
+  h5 {
+    font-size: 100%;
   }
   .anima {
     -webkit-box-orient: vertical;

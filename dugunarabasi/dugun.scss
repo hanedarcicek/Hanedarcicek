@@ -246,6 +246,49 @@ body {
 }
 /*--------------Topbox Codes------------------------------*/
 
+.col-3{
+    float:left;
+}
+
+#cards{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+
+    h5 {
+        color: $primary-color;
+    }
+    
+
+    .card img{
+        transform: scale(0.90);
+        
+        
+       
+    }
+    
+    .card img:hover{
+        
+        transform: scale(1);
+        
+    
+    }
+
+
+}
+
+.card-body{
+
+    height: 8rem;
+    
+}
+
+.card{
+    
+    float:left;
+}
+
 
 
 /*--------------Keyframes------------------------------*/
@@ -314,6 +357,11 @@ body {
         position: absolute;
         right: 1rem;
         top:1.5rem;
+    }
+
+    h5{
+         font-size: 100%;
+
     }
     
     .anima{
