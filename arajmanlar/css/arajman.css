@@ -128,18 +128,22 @@ body {
           transform: scale(1);
 }
 
+.card-body {
+  height: 9rem;
+}
+
 .card {
   float: left;
 }
 
-/*--------------Main Codes------------------------------*/
-/*--------------Topbox Codes------------------------------*/
 .img-spec {
   height: 10rem;
   width: 100%;
   border-radius: 1rem;
 }
 
+/*--------------Main Codes------------------------------*/
+/*--------------Topbox Codes------------------------------*/
 #animation .img-spec {
   -webkit-animation: imgrise 1.5s linear;
           animation: imgrise 1.5s linear;

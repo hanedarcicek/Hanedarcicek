@@ -94,8 +94,21 @@ body {
 
 }
 
+.card-body{
+
+    height: 9rem;
+    
+}
+
 .card{
+    
     float:left;
+}
+
+.img-spec{
+    height: 10rem;
+    width: 100%;
+    border-radius:1rem;
 }
 
 /*--------------Main Codes------------------------------*/
@@ -106,11 +119,7 @@ body {
 
 
 /*--------------Topbox Codes------------------------------*/
-.img-spec{
-    height: 10rem;
-    width: 100%;
-    border-radius:1rem;
-}
+
 #animation{
 
     .img-spec{
@@ -321,6 +330,8 @@ body {
     }
 
 
+
+
 }
 @media screen and (max-width: 576px) {
 
@@ -384,6 +395,8 @@ body {
     .nav-link {
         font-size: 0.9vw !important;
     }
+
+
 
 }
 @media screen and (min-width: 1440px) {
