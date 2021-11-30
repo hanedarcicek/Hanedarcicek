@@ -223,6 +223,10 @@ body {
   color: #fff;
 }
 
+.card-body {
+  min-height: 10rem;
+}
+
 /*--------------Main Codes------------------------------*/
 #back {
   background: #fff;
