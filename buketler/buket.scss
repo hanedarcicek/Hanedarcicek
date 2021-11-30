@@ -126,6 +126,10 @@ body {
 }
 /*--------------Hamburger Menu Codes------------------------------*/
 
+.rounded{
+    border-radius: 3.6rem;
+}
+
 
 
 /*--------------Main Codes------------------------------*/
@@ -162,11 +166,10 @@ body {
 }
 
 .img-spec{
-    height: 11rem;
+    height: 12rem;
     width: 100%;
     border-radius:1rem;
 }
-
 
 .btn{
     font-size: 0.8rem;
@@ -184,6 +187,7 @@ body {
     color: #fff;
 
 }
+
 
 
 /*--------------Main Codes------------------------------*/
@@ -290,6 +294,29 @@ body {
 
     }
 
+    .seasonal{
+
+        .card-body{
+      
+            height: 8rem;
+    }
+
+
+    }
+
+    .card-body{
+      
+        height: 12rem;
+    }
+
+    .img-spec{
+        height: 9rem;
+        width: 100%;
+        border-radius:1rem;
+    }
+
+    
+
 
 
 
@@ -301,6 +328,10 @@ body {
         display: none;
 
     }
+    .card-body{
+        height: auto;
+    }
+
    
 
 }
@@ -310,6 +341,10 @@ body {
     .nav-link {
         font-size: 0.9vw !important;
     }
+    .card-body{
+        height: auto;
+    }
+
 
 }
 
@@ -321,7 +356,7 @@ body {
 
     small {
 
-        font-size: 1vw !important;
+        font-size: 0.9vw !important;
 
     }
 

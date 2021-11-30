@@ -153,7 +153,7 @@ body {
 .orchid-cards{
     .card-body{
 
-        height: 9rem;
+        height: 8rem;
         
     }
     
@@ -341,10 +341,7 @@ body {
         display: none;
 
     }
-
-
-
-
+   
 }
 @media screen and (min-width: 576px) {
  
@@ -352,13 +349,39 @@ body {
         display: none;
 
     }
+    .card-body{
+
+        height: auto;
+        
+    }
+
    
 
 }
+
+@media screen and (min-width: 768px) {
+ 
+    .card-body{
+
+        height: auto;
+        
+    }
+
+   
+
+}
+
+
 @media screen and (min-width: 1280px) {
 
     .nav-link {
         font-size: 0.9vw !important;
+    }
+
+    .card-body{
+
+        height: auto;
+        
     }
 
 }
