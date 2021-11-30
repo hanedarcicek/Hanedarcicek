@@ -348,7 +348,7 @@ body {
 
     #header {
         display: grid;
-        height: 5rem;
+        height: 10vh;
         grid-template-columns: 1fr 0.05fr;
 
         #menu {
@@ -368,7 +368,7 @@ body {
 
     .side {
         height: 90vh;
-        margin-top: 4rem;
+        padding-top: 4rem;
         text-align: center;
         margin-left: 0;
         padding-left:  0rem;
