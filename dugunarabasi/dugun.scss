@@ -310,7 +310,7 @@ body {
 
 /*--------------Media Queries------------------------------*/
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 789px) {
 
 
     #header {
@@ -334,7 +334,11 @@ body {
     }
 
 
+
+
 }
+
+
 
 @media screen and (max-width: 576px) {
 
@@ -384,6 +388,16 @@ body {
 
     }
 
+
+}
+
+@media screen and (min-width:992px) {
+ 
+    #media-4{
+        display: none !important;
+
+    }
+   
 
 }
 
