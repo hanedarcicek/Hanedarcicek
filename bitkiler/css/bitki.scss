@@ -3,6 +3,17 @@
 $primary-color: #C94A90;
 $f8text : #f8f8f8f8;
 $navbar : #b9337d;
+@mixin flexy {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@mixin gridy{
+    display: grid;
+    justify-items: center;
+    align-items: center;
+}
 
 body {
     font-size: 16px;
@@ -26,9 +37,7 @@ body {
     grid-template-rows: 1fr;
 
     .logo {
-        display: flex;
-        align-items: center;
-        justify-content: center;
+        @include flexy;
     }
 
     #menu {
@@ -87,9 +96,7 @@ body {
 
 /*--------------Main Codes------------------------------*/
 #cards{
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    @include flexy;
     
 
     h5 {
@@ -244,9 +251,7 @@ body {
 #footer{
     width: 100%;
     height: 5vh;
-    display: grid;
-    justify-items: center;
-    align-items: center;
+    @include gridy;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr;
     background-color: $f8text;
@@ -322,15 +327,12 @@ body {
     }
 
     .anima{
+        @include flexy;
         flex-direction: column-reverse;
-        align-items: center;
-        justify-content: center;
 
         .mobile-center{
             margin-top: 2rem;
-            display: flex;
-            align-items: center;
-            justify-content: center;
+            @include flexy;
             flex-direction: column;
             text-align: center;
         }

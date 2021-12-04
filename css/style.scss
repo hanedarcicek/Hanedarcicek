@@ -4,6 +4,18 @@ $primary-color: #C94A90;
 $f8text : #f8f8f8f8;
 $navbar : #b9337d;
 
+@mixin flexy {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@mixin gridy{
+    display: grid;
+    justify-items: center;
+    align-items: center;
+}
+
 body {
     font-size: 16px;
     font-family: 'Signika', sans-serif;
@@ -23,9 +35,7 @@ body {
     grid-template-rows: 1fr;
 
     .logo {
-        display: flex;
-        align-items: center;
-        justify-content: center;
+        @include flexy;
     }
 
     #menu {
@@ -305,9 +315,7 @@ body {
 
         #menu {
 
-            display: flex;
-            align-items: center;
-            justify-content: center;
+            @include flexy;
 
             .nav-link {
                 font-size: 2vw;
