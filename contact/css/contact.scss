@@ -20,7 +20,7 @@ body {
     font-size: 16px;
     font-family: 'Signika', sans-serif;
     width: 100%;
-    height: 100vh;
+    height: 100%;
     background: rgb(75, 164, 186);
     background: -moz-linear-gradient(180deg, rgba(75, 164, 186, 1) 0%, rgba(175, 167, 187, 1) 20%, rgba(244, 192, 179, 1) 100%);
     background: -webkit-linear-gradient(180deg, rgba(75, 164, 186, 1) 0%, rgba(175, 167, 187, 1) 20%, rgba(244, 192, 179, 1) 100%);
@@ -89,9 +89,9 @@ body {
 }
 
 .phone-div{
-    margin-top: 1rem;
+    text-align: center;
     display: flex;
-    justify-content:left;
+    justify-content:center;
 
     .btn {
         font-size: 0.8rem;
@@ -99,8 +99,6 @@ body {
         height: 2rem;
         background-color: #fff;
         color: $primary-color;
-        margin-bottom: 0.5rem;
-
     }
     
     .btn:hover{
@@ -114,11 +112,10 @@ body {
     }
 }
 
-.img-spec{
-    height: 20rem;
-    width: 100%;
-    border-radius:1rem;
+.maps{
+    height: 25rem;
 }
+
 
 
 /*--------------Hamburger Menu Codes------------------------------*/
