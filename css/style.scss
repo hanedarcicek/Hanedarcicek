@@ -2,7 +2,6 @@
 
 $primary-color: #C94A90;
 $f8text : #f8f8f8f8;
-$navbar : #b9337d;
 
 @mixin flexy {
     display: flex;
@@ -45,20 +44,12 @@ body {
         height: 15vh;
 
         .nav-link {
-            background-color: $f8text;
             color: $primary-color;
-            border: 2px solid $primary-color;
-            font-size: 1.1vw;
-            font-weight: 500;
-            margin-left: 0.75vw;
-            border-radius: 0.6rem;
         }
 
         .nav-link:hover {
-            background-color: $f8text;
-            border: 2px solid $primary-color;
-            color: $primary-color;
-            border-radius: 0.6rem;
+           
+            opacity: 0.8;
         }
 
     }

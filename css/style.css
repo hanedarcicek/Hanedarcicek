@@ -77,20 +77,11 @@ body {
 }
 
 #header #menu .nav-link {
-  background-color: #f8f8f8f8;
   color: #C94A90;
-  border: 2px solid #C94A90;
-  font-size: 1.1vw;
-  font-weight: 500;
-  margin-left: 0.75vw;
-  border-radius: 0.6rem;
 }
 
 #header #menu .nav-link:hover {
-  background-color: #f8f8f8f8;
-  border: 2px solid #C94A90;
-  color: #C94A90;
-  border-radius: 0.6rem;
+  opacity: 0.8;
 }
 
 /*--------------Header Codes------------------------------*/
