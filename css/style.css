@@ -427,7 +427,7 @@ body {
 
 @media screen and (min-width: 1280px) {
   .nav-link {
-    font-size: 0.9vw !important;
+    font-size: 1.2vw !important;
   }
 }
 
