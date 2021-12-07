@@ -2,4 +2,4 @@
 
 https://cenkberry.github.io/Hanedarcicek/  repo
 
-https://hanedarcicek.com website
+https://www.hanedarcicek.com website
