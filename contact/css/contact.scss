@@ -15,7 +15,6 @@ $navbar : #b9337d;
     align-items: center;
 }
 
-
 body {
     font-size: 16px;
     font-family: 'Signika', sans-serif;
@@ -108,15 +107,12 @@ body {
         background-color: #ffffff;
         border: 1px solid $primary-color;
         color: $primary-color;
-
     }
 }
 
 .maps{
     height: 25rem;
 }
-
-
 
 /*--------------Hamburger Menu Codes------------------------------*/
 #hamb-menu{
@@ -212,11 +208,9 @@ body {
             @include flexy;
 
             .nav-link {
-                font-size: 2vw;
+                font-size: 1.6vw;
             }
-
         }
-
     }
 
     #footer{
@@ -262,7 +256,6 @@ body {
 
     .hamb{
         display: none;
-
     }
 }
 @media screen and (min-width: 1280px) {
@@ -278,11 +271,8 @@ body {
     }
 
     small {
-
         font-size: 1vw !important;
-
     }
-
 
 }
 
