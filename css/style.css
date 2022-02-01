@@ -42,11 +42,11 @@ body {
 /*--------------Header Codes------------------------------*/
 #header {
   width: 100%;
-  height: 15vh;
+  height: 10vh;
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 1fr 3fr;
-      grid-template-columns: 1fr 3fr;
+  -ms-grid-columns: 2fr 10fr;
+      grid-template-columns: 2fr 10fr;
   -ms-grid-rows: 1fr;
       grid-template-rows: 1fr;
 }
@@ -73,7 +73,7 @@ body {
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: end;
-  height: 15vh;
+  height: 10vh;
 }
 
 #header #menu .nav-link {
@@ -167,8 +167,6 @@ body {
 }
 
 /*--------------Main Codes------------------------------*/
-/*--------------Footer Codes------------------------------*/
-/*--------------Footer Codes------------------------------*/
 /*--------------Hamburger Menu Codes------------------------------*/
 #hamb-menu {
   background-color: #C94A90;
@@ -351,7 +349,7 @@ body {
   #header {
     display: -ms-grid;
     display: grid;
-    height: 23vh;
+    height: 20vh;
     -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
   }
@@ -373,24 +371,21 @@ body {
     padding-left: 4rem;
     padding-bottom: 10rem;
   }
-  #footer {
-    display: 10vh;
-  }
 }
 
 @media screen and (max-width: 576px) {
   body {
-    height: 100vh;
+    height: auto;
     background-image: url(./css-image/mobwall.jpg);
     background-size: cover;
     background-position: center;
-    -webkit-backdrop-filter: url(filters.svg#filter) brightness(80%);
-            backdrop-filter: url(filters.svg#filter) brightness(80%);
+    -webkit-backdrop-filter: url(filters.svg#filter) brightness(65%);
+            backdrop-filter: url(filters.svg#filter) brightness(65%);
   }
   #header {
     display: -ms-grid;
     display: grid;
-    height: 10vh;
+    height: 5rem;
     -ms-grid-columns: 1fr 0.05fr;
         grid-template-columns: 1fr 0.05fr;
   }
@@ -427,7 +422,7 @@ body {
 
 @media screen and (min-width: 1280px) {
   .nav-link {
-    font-size: 1.2vw !important;
+    font-size: 0.9vw !important;
   }
 }
 
