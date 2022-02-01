@@ -68,7 +68,7 @@ body {
     overflow: hidden;
     padding-left: 10rem;
     padding-bottom: 10rem;
-    
+
     h1 {
         animation: bigtext 2s linear;
     }
@@ -129,7 +129,7 @@ body {
     background-color: $primary-color;
     color: $f8text;
     position: absolute;
-    width: 90%;
+    width: 100%;
     height: 100vh;
     right:0;
     display: none;

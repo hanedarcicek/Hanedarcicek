@@ -94,18 +94,16 @@ body {
         line-height: 0.4vw;
         margin-left: 1vw;
     }
-
 }
 
 /*--------------Footer Codes------------------------------*/
-
 
 /*--------------Hamburger Menu Codes------------------------------*/
 #hamb-menu{
     background-color: $primary-color;
     color: $f8text;
     position: absolute;
-    width: 90%;
+    width: 100%;
     height: 100vh;
     right:0;
     display: none;
@@ -159,7 +157,6 @@ body {
 }
 /*--------------Hamburger Menu Codes------------------------------*/
 
-
 /*--------------Topbox Codes------------------------------*/
 .img-spec{
     height: 100%;
@@ -187,7 +184,6 @@ body {
     animation-delay: 3s;
 }
 
-
 .exp-center{
     @include flexy;
     flex-direction: column;
@@ -208,7 +204,6 @@ body {
         color: $primary-color;
         margin-bottom: 0.5rem;
         border: 1px solid $primary-color;
-
     }
 
     .btn:hover {
@@ -227,7 +222,6 @@ body {
     margin-bottom: 0.5rem;
     font-weight: 500;
     animation: centerbutton 2s linear;
-
 }
 .btn:hover{
     width: 8rem;
@@ -246,7 +240,6 @@ body {
 #cards{
     @include flexy;
 
-
     h5 {
         color: $primary-color;
     }
@@ -258,7 +251,6 @@ body {
     .card img:hover{
         transform: scale(1);
     }
-
 
 }
 
@@ -316,7 +308,6 @@ body {
         }
     }
 
-
     .hamb{
         display: inline-block;
         position: absolute;
@@ -326,7 +317,6 @@ body {
 
     h5{
          font-size: 100%;
-
     }
 
     .anima{
@@ -364,8 +354,6 @@ body {
         height: auto;
 
     }
-
-
 }
 
 @media screen and (min-width: 1280px) {
@@ -383,6 +371,5 @@ body {
     small {
         font-size: 1vw !important;
     }
-
 }
 /*--------------Media Queries------------------------------*/

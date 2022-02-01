@@ -46,8 +46,8 @@ body {
   height: 10vh;
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 1fr 3fr;
-      grid-template-columns: 1fr 3fr;
+  -ms-grid-columns: 2fr 10fr;
+      grid-template-columns: 2fr 10fr;
   -ms-grid-rows: 1fr;
       grid-template-rows: 1fr;
 }
@@ -220,7 +220,7 @@ body {
   background-color: #C94A90;
   color: #f8f8f8f8;
   position: absolute;
-  width: 90%;
+  width: 100%;
   height: 100vh;
   right: 0;
   display: none;
@@ -356,7 +356,7 @@ body {
   #header {
     display: -ms-grid;
     display: grid;
-    height: auto;
+    height: 20vh;
     -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
   }
@@ -372,7 +372,7 @@ body {
             justify-content: center;
   }
   #header #menu .nav-link {
-    font-size: 2vw;
+    font-size: 1.6vw;
   }
 }
 
@@ -380,7 +380,7 @@ body {
   #header {
     display: -ms-grid;
     display: grid;
-    height: auto;
+    height: 5rem;
     -ms-grid-columns: 1fr 0.05fr;
         grid-template-columns: 1fr 0.05fr;
   }

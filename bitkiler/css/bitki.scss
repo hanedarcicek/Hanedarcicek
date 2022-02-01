@@ -33,7 +33,7 @@ body {
     width: 100%;
     height: 10vh;
     display: grid;
-    grid-template-columns: 1fr 3fr;
+    grid-template-columns: 2fr 10fr;
     grid-template-rows: 1fr;
 
     .logo {
@@ -170,7 +170,7 @@ body {
     background-color: $primary-color;
     color: $f8text;
     position: absolute;
-    width: 90%;
+    width: 100%;
     height: 100vh;
     right:0;
     display: none;
