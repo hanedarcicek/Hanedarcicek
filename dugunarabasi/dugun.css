@@ -196,7 +196,7 @@ body {
 /*--------------Hamburger Menu Codes------------------------------*/
 /*--------------Topbox Codes------------------------------*/
 .img-spec {
-  height: 10rem;
+  height: 100%;
   width: 100%;
   border-radius: 1rem;
 }
@@ -381,7 +381,7 @@ body {
   #header {
     display: -ms-grid;
     display: grid;
-    height: 20vh;
+    height: auto;
     -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
   }
@@ -397,7 +397,7 @@ body {
             justify-content: center;
   }
   #header #menu .nav-link {
-    font-size: 2vw;
+    font-size: 1.6vw;
   }
 }
 
@@ -467,6 +467,11 @@ body {
 @media screen and (min-width: 576px) {
   .hamb {
     display: none;
+  }
+  #header {
+    display: -ms-grid;
+    display: grid;
+    height: auto;
   }
 }
 

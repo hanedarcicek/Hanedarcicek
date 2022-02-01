@@ -201,7 +201,7 @@ body {
 }
 
 .img-spec {
-  height: 12rem;
+  height: 100%;
   width: 100%;
   border-radius: 1rem;
 }
@@ -285,7 +285,10 @@ body {
             justify-content: center;
   }
   #header #menu .nav-link {
-    font-size: 2vw;
+    font-size: 1.6vw;
+  }
+  #footer {
+    display: none;
   }
 }
 
@@ -312,11 +315,17 @@ body {
   .seasonal .card-body {
     height: 8rem;
   }
+  .mobile-rev {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
   .card-body {
     height: 12rem;
   }
   .img-spec {
-    height: 9rem;
+    height: 100%;
     width: 100%;
     border-radius: 1rem;
   }
@@ -327,6 +336,11 @@ body {
     display: none;
   }
   .card-body {
+    height: auto;
+  }
+  #header {
+    display: -ms-grid;
+    display: grid;
     height: auto;
   }
 }

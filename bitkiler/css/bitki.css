@@ -150,7 +150,7 @@ body {
 }
 
 .img-spec {
-  height: 10rem;
+  height: 100%;
   width: 100%;
   border-radius: 1rem;
 }
@@ -185,7 +185,7 @@ body {
 }
 
 .orchid-cards .img-spec {
-  height: 10rem;
+  height: 100%;
   width: 100%;
   border-radius: 1rem;
 }
@@ -277,9 +277,9 @@ body {
 }
 
 #footer small {
-  font-size: 1.2vw;
+  font-size: 1vw;
   word-spacing: 0.2vw;
-  line-height: 0.4vw;
+  line-height: 0.3vw;
   margin-left: 1vw;
 }
 
@@ -289,7 +289,7 @@ body {
   #header {
     display: -ms-grid;
     display: grid;
-    height: 20vh;
+    height: auto;
     -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
   }
@@ -305,7 +305,10 @@ body {
             justify-content: center;
   }
   #header #menu .nav-link {
-    font-size: 2vw;
+    font-size: 1.6vw;
+  }
+  #footer {
+    display: none;
   }
 }
 
@@ -367,12 +370,6 @@ body {
   .hamb {
     display: none;
   }
-  .card-body {
-    height: auto;
-  }
-}
-
-@media screen and (min-width: 768px) {
   .card-body {
     height: auto;
   }

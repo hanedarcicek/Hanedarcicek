@@ -25,7 +25,7 @@ body {
     background: -webkit-linear-gradient(180deg, rgba(75, 164, 186, 1) 0%, rgba(175, 167, 187, 1) 20%, rgba(244, 192, 179, 1) 100%);
     background: linear-gradient(180deg, rgba(75, 164, 186, 1) 0%, rgba(175, 167, 187, 1) 20%, rgba(244, 192, 179, 1) 100%);
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#4ba4ba", endColorstr="#f4c0b3", GradientType=1);
-    
+
 }
 
 /*--------------Header Codes------------------------------*/
@@ -88,17 +88,12 @@ body {
     border-top-right-radius: 1rem;
     color: $primary-color;
     border: 0.2vw solid $primary-color;
-
-  
-
-
     small {
         font-size: 1.2vw;
         word-spacing: 0.2vw;
         line-height: 0.4vw;
         margin-left: 1vw;
     }
-
 
 }
 
@@ -125,7 +120,7 @@ body {
     a:hover
     {
         color: $f8text;
-        
+
     }
 
     .nav-item{
@@ -136,14 +131,9 @@ body {
 
     .nav-link{
         font-size: 4.4vw;
-
-        
-        
     }
-
-    
-
 }
+
 #closer{
     display: none;
     background-color: $primary-color;
@@ -157,7 +147,6 @@ body {
     font-size: 1.6rem;
     border:2px solid $f8text;
     color: $f8text;
-
 }
 
 .hamb{
@@ -173,7 +162,7 @@ body {
 
 /*--------------Topbox Codes------------------------------*/
 .img-spec{
-    height: 10rem;
+    height: 100%;
     width: 100%;
     border-radius:1rem;
 }
@@ -221,7 +210,7 @@ body {
         border: 1px solid $primary-color;
 
     }
-    
+
     .btn:hover {
         border: 3px solid $primary-color;
         color: $primary-color;
@@ -247,7 +236,6 @@ body {
     border: 1px solid $primary-color;
     color: $primary-color;
     font-weight: 700;
-
 }
 /*--------------Topbox Codes------------------------------*/
 
@@ -257,46 +245,34 @@ body {
 
 #cards{
     @include flexy;
-    
+
 
     h5 {
         color: $primary-color;
     }
-    
 
     .card img{
         transform: scale(0.90);
-        
-        
-       
     }
-    
+
     .card img:hover{
-        
         transform: scale(1);
-        
-    
     }
 
 
 }
 
 .card-body{
-
     height: 8rem;
-    
 }
 
 .card{
-    
     float:left;
 }
 
-
-
 /*--------------Keyframes------------------------------*/
 @keyframes show{
-    
+
     0%   {opacity:0;}
     20%  {opacity:0.2;}
     40%  {opacity:0.4;}
@@ -307,10 +283,6 @@ body {
 }
 /*--------------Keyframes------------------------------*/
 
-
-
-
-
 /*--------------Media Queries------------------------------*/
 
 @media screen and (max-width: 789px) {
@@ -318,7 +290,7 @@ body {
 
     #header {
         display: grid;
-        height: 20vh;
+        height: auto;
         grid-template-columns: 1fr;
 
         #menu {
@@ -326,23 +298,13 @@ body {
             @include flexy;
 
             .nav-link {
-                font-size: 2vw;
+                font-size: 1.6vw;
             }
-
         }
-
-
     }
-
-
-
-
 }
 
-
-
 @media screen and (max-width: 576px) {
-
 
     #header {
         display: grid;
@@ -352,11 +314,9 @@ body {
         #menu {
             display: none;
         }
-
-
     }
 
-    
+
     .hamb{
         display: inline-block;
         position: absolute;
@@ -368,11 +328,11 @@ body {
          font-size: 100%;
 
     }
-    
+
     .anima{
         @include flexy;
         flex-direction: column-reverse;
-       
+
 
         .mobile-center{
             @include flexy;
@@ -381,32 +341,30 @@ body {
             text-align: center;
         }
     }
-    
+
     #footer {
         display: none;
-
     }
-
-
 }
 
 @media screen and (min-width:992px) {
- 
+
     #media-4{
         display: none !important;
-
     }
-   
-
 }
 
 @media screen and (min-width: 576px) {
- 
+
     .hamb{
         display: none;
+    }
+    #header {
+        display: grid;
+        height: auto;
 
     }
-   
+
 
 }
 
@@ -415,7 +373,6 @@ body {
     .nav-link {
         font-size: 0.9vw !important;
     }
-
 }
 
 @media screen and (min-width: 1440px) {
@@ -423,14 +380,9 @@ body {
     .nav-link {
         font-size: 0.9vw !important;
     }
-
     small {
-
         font-size: 1vw !important;
-
     }
 
-
 }
-
 /*--------------Media Queries------------------------------*/

@@ -356,7 +356,7 @@ body {
   #header {
     display: -ms-grid;
     display: grid;
-    height: 20vh;
+    height: auto;
     -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
   }
@@ -380,7 +380,7 @@ body {
   #header {
     display: -ms-grid;
     display: grid;
-    height: 5rem;
+    height: auto;
     -ms-grid-columns: 1fr 0.05fr;
         grid-template-columns: 1fr 0.05fr;
   }
@@ -440,6 +440,11 @@ body {
 @media screen and (min-width: 1280px) {
   .nav-link {
     font-size: 0.9vw !important;
+  }
+  .img-spec {
+    height: 12rem;
+    width: 100%;
+    border-radius: 1rem;
   }
 }
 

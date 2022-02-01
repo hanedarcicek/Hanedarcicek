@@ -92,7 +92,7 @@ body {
     a:hover
     {
         color: $f8text;
-        
+
     }
 
     .nav-item{
@@ -104,11 +104,11 @@ body {
     .nav-link{
         font-size: 4.4vw;
 
-        
-        
+
+
     }
 
-    
+
 
 }
 #closer{
@@ -140,42 +140,27 @@ body {
     border-radius: 3.6rem;
 }
 
-
-
 /*--------------Main Codes------------------------------*/
 #cards{
     @include flexy;
-    
-
     h5 {
         color: $primary-color;
     }
-    
-
     .card img{
         transform: scale(0.90);
-        
-        
-       
-    }
-    
-    .card img:hover{
-        
-        transform: scale(1);
-        
-    
     }
 
+    .card img:hover{
+        transform: scale(1);
+    }
 
 }
-
-
 .card{
     float:left;
 }
 
 .img-spec{
-    height: 12rem;
+    height: 100%;
     width: 100%;
     border-radius:1rem;
 }
@@ -201,7 +186,7 @@ body {
 .card-body{
 
     min-height: 10rem;
-    
+
 }
 
 /*--------------Main Codes------------------------------*/
@@ -211,12 +196,6 @@ body {
     background: linear-gradient(to right bottom, rgba(255,255,255,0.7), rgba(255,255,255,0.3));
     border-radius: 1rem;
 }
-
-
-
-
-
-
 /*--------------Footer Codes------------------------------*/
 #footer {
     width: 100%;
@@ -229,27 +208,15 @@ body {
     border-top-right-radius: 1rem;
     color: $primary-color;
     border: 0.2vw solid $primary-color;
-
-  
-
-
     small {
         font-size: 1.2vw;
         word-spacing: 0.2vw;
         line-height: 0.4vw;
         margin-left: 1vw;
     }
-
-
 }
 
 /*--------------Footer Codes------------------------------*/
-
-
-
-
-
-
 
 /*--------------Media Queries------------------------------*/
 
@@ -266,18 +233,18 @@ body {
             @include flexy;
 
             .nav-link {
-                font-size: 2vw;
+                font-size: 1.6vw;
             }
-
         }
-
 
     }
 
+    #footer{
+        display:none;
+    }
 
 }
 @media screen and (max-width: 576px) {
-
 
     #header {
         display: grid;
@@ -286,10 +253,7 @@ body {
 
         #menu {
             display: none;
-
         }
-
-
     }
 
     .hamb{
@@ -301,48 +265,45 @@ body {
 
     #footer {
         display: none;
-
     }
 
-    .seasonal{
-
-        .card-body{
-      
+    .seasonal
+    {
+        .card-body
+        {
             height: 8rem;
+        }
+
     }
-
-
+    .mobile-rev{
+        flex-direction: column-reverse;
     }
 
     .card-body{
-      
+
         height: 12rem;
     }
 
     .img-spec{
-        height: 9rem;
+        height: 100%;
         width: 100%;
         border-radius:1rem;
     }
-
-    
-
-
-
-
 }
 
 @media screen and (min-width: 576px) {
- 
+
     .hamb{
         display: none;
-
     }
     .card-body{
         height: auto;
     }
-
-   
+    #header {
+        display: grid;
+        height: auto;
+    
+    }
 
 }
 
@@ -355,7 +316,6 @@ body {
         height: auto;
     }
 
-
 }
 
 @media screen and (min-width: 1440px) {
@@ -365,12 +325,7 @@ body {
     }
 
     small {
-
         font-size: 0.9vw !important;
-
     }
-
-
 }
-
 /*--------------Media Queries------------------------------*/
