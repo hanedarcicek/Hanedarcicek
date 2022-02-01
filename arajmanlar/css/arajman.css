@@ -83,7 +83,7 @@ body {
   border: 2px solid #C94A90;
   font-size: 1.1vw;
   font-weight: 500;
-  margin-left: 0.75vw;
+  margin-left: 0.3vw;
   border-radius: 0.6rem;
 }
 
@@ -137,7 +137,7 @@ body {
 }
 
 .img-spec {
-  height: 10rem;
+  height: 100%;
   width: 100%;
   border-radius: 1rem;
 }
@@ -392,6 +392,10 @@ body {
     position: absolute;
     right: 1rem;
     top: 1.5rem;
+  }
+  .topbarTwo {
+    background-color: #C94A90;
+    border-radius: 0;
   }
   .anima {
     -webkit-box-orient: vertical;
