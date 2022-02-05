@@ -31,7 +31,7 @@ body {
     width: 100%;
     height: 10vh;
     display: grid;
-    grid-template-columns: 2fr 10fr;
+    grid-template-columns: 1fr 3fr;
     grid-template-rows: 1fr;
 
     .logo {
@@ -50,7 +50,7 @@ body {
             border: 2px solid $primary-color;
             font-size: 1.1vw;
             font-weight: 500;
-            margin-left: 0.3vw;
+            margin-left: 0.75vw;
             border-radius: 0.6rem;
         }
 
@@ -284,6 +284,9 @@ body {
             }
         }
     }
+    #footer{
+        display:none;
+    }
 }
 @media screen and (max-width: 576px) {
 
@@ -328,10 +331,17 @@ body {
     }
 }
 @media screen and (min-width: 576px) {
+    
+    .card-body{
+        height: auto;
+    }
+    #header {
+        display: grid;
+        height: auto;
 
+    }
     .hamb{
         display: none;
-
     }
 }
 @media screen and (min-width: 1280px) {
@@ -343,6 +353,9 @@ body {
         height: 12rem;
         width: 100%;
         border-radius:1rem;
+    }
+    .card-body{
+        height: auto;
     }
 
 }
